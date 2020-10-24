@@ -1,0 +1,884 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+/* divs gerais */
+
+.clear{
+	clear:both;
+}
+
+.container{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* * * * */
+
+/* header */
+
+header{
+	width: 100%;
+	padding: 20px 2% 35px 2%;
+	height: 130px;
+}
+
+header .logo{
+	float: left;
+	background-image: url('../imagens/logo.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 208px;
+	height: 82px;
+}
+
+header nav.menu-mobile{
+		display: none;
+		width: 32px;
+		height: 32px;
+		background-image: url('../imagens/icon_menu.png');
+		background-size: 100% 100%;
+		background-position: center;
+		float: right;
+		cursor: pointer;
+		margin-top: 40px;
+	}
+
+header nav.menu-mobile ul{
+	display: none;
+	z-index: 999;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	background-color: rgb(251,251,251);
+	width: 100%;
+	text-align: center;
+}
+
+header nav.menu-mobile li{
+	font-size: 23px;
+	padding: 20px 0;
+	width: 100%;
+}
+
+nav.menu-mobile li:hover{
+	background-color: rgb(244,244,244);
+}
+
+.menu-mobile li a{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	width: 100%;
+}
+
+nav.menu-desktop{
+	float: right;
+	position: relative;
+	top: 40px;
+}
+
+nav.menu-desktop li{
+	list-style-type: none;
+	float: left;
+	padding: 0 30px;
+}
+
+.menu-desktop li.selected a{
+	color: #EB2D2D;
+}
+
+nav.menu-desktop a{
+	color: black;
+	font-size: 23px;
+	font-style: italic;
+	text-decoration: none;
+}
+
+/* * * * */
+
+/* Sessão 1 */
+
+section.banner{
+	background-color: black;
+	width: 100%;
+	height: 650px;
+	min-height: 600px;
+	max-height: 800px;
+	background-repeat: no-repeat;
+	background-image: url('../imagens/bg.jpg');
+	overflow: hidden;
+}
+
+section.banner .text-banner{
+	padding: 70px;
+}
+
+section.banner .text-banner-single{
+	margin-top: 30px;
+	color: white;
+	background-image: url('../imagens/box-text.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	line-height: 70px;
+	height: 70px;
+	width: 314px;
+	font-size: 23px;
+	font-style: italic;
+	text-transform: uppercase;
+	padding-left: 50px;
+}
+
+section.banner .text-banner-single:nth-of-type(2){
+	width: 200px;
+	position: relative;
+	left: -10px;
+}
+
+section.banner .text-banner-single:nth-of-type(3){
+	position: relative;
+	left: -20px;
+	width: 170px;
+}
+
+section .text-banner-single:nth-of-type(4){
+	width: 320px;
+	background-image: url('../imagens/box-white-text.png');
+	position: relative;
+	left: -30px;
+	color: black;
+	font-size: 21px;
+}
+
+/* * * * */
+
+/* sessão 2 */
+
+section.veiculos-destaque{
+	padding: 90px 2%;
+	position: relative;
+}
+
+.text-line{
+	max-width: 1280px;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.linha{
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+}
+
+.text-line h2{
+	position: relative;
+	background-color: white;
+	padding: 0 20px;
+	text-align: center;
+	font-size: 27px;
+	display: inline-block;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+section.veiculos-destaque .container{
+	padding: 40px 0;
+	max-width: 1400px;
+}
+
+.vitrine-carros{
+	width: 33.3%;
+	float: left;
+	border: 8px solid white;
+}
+
+.vitrine-carros .carro-img{
+	background-image: url('../imagens/carro1.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	padding-top: 100%;
+}
+
+.vitrine-carros .carro-info h2{
+	padding-top: 8px;
+	font-size: 20px;
+}
+
+.vitrine-carros .carro-info p{
+	padding-top: 8px;
+	font-size: 15px;
+}
+
+.btn1{
+	text-decoration: none;
+	background-color: #EB2D2D;
+	border-bottom: 5px solid #B21E1E;
+	color: white;
+	display: inline-block;
+	padding: 10px 0;
+	width: 150px;
+	text-align: center;
+	font-style: italic;
+	cursor: pointer;
+}
+
+.vitrine-carros .carro-info a{
+	margin-top: 10px;
+}
+
+/* * * * */
+
+/* sessão 3 */
+
+.servicos-descricao{
+	/*background-color: #242424; Gambiarra?*/
+	display: flex;
+}
+
+.servicos-descricao .half1{
+	display: inline-block;
+	padding: 90px 0;
+	width: 50%;
+	background-color: #242424;
+	text-align: center;
+}
+
+.servicos-descricao .half1-wrapper{
+	text-align: left;
+	display: inline-block;
+	color: white;
+}
+
+.servicos-descricao .half1-wrapper h2{
+	font-size: 32px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.servicos-descricao .half1-wrapper ul{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.servicos-descricao .half1-wrapper li{
+	margin-left: 15px;
+}
+
+.servicos-descricao .btn1{
+	vertical-align: bottom;
+	margin-left: 40px;
+}
+
+.servicos-descricao .half2{
+	display: inline-block;
+	padding: 90px 100px;
+	width: 50%;
+	background-color: #EB2D2D;
+	color: white;
+}
+
+.servicos-descricao .half2 h2{
+	font-size: 32px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.servicos-descricao .half2 .text-block p{
+	margin-top: 19px;
+	font-size: 22px;
+	color: white;
+}
+
+.servicos-descricao .half2 .nome-depoimento p{
+	float: left;
+	font-size: 23px;
+	color: #252525;
+	margin-top: 25px;
+} 
+
+.servicos-descricao .half2 .arrows{
+	float: right;
+	padding: 20px
+}
+
+.servicos-descricao .half2 .arrows img{
+	cursor: pointer;
+}
+
+.servicos-descricao .half2 .arrows img:first-of-type{
+	padding-right: 40px;
+}
+
+/* * * * */
+
+/* Sessão 4 */
+
+section.contato{
+	padding: 80px 2% 0 2%;
+	position: relative;
+}
+
+section.contato .text-line{
+	position: relative;
+	text-align: center;
+}
+
+section.contato .text-line .linha{
+	top: 20px;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: black;
+}
+
+section.contato .text-line h2{
+	display: inline-block;
+	position: relative;
+	padding: 0 20px;
+	background-color: white;
+	font-style: italic;
+	font-size: 27px;
+	text-transform: uppercase;
+}
+
+section.contato form{
+	max-width: 600px;
+	margin: 30px auto;
+}
+
+section.contato form .form-wrapper{
+	float: left;
+	padding: 10px;
+}
+
+section.contato form .w100{
+	width: 100%;
+}
+
+section.contato form .w50{
+	width: 50%;
+}
+
+section.contato form input[type="text"]{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+}
+
+section.contato form textarea{
+	resize: none;
+	width: 100%;
+	height: 120px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+section.contato .form-wrapper:nth-of-type(5){
+	text-align: center;
+}
+
+section.contato .form-wrapper .btn1{
+	border: none;
+	font-size: 17px;
+	border-bottom: 5px solid #B21E1E;
+}
+
+/* * * * */
+
+/* footer */
+
+footer{
+	padding: 40px 2%;
+	background-color: #252525;
+}
+
+footer nav ul{
+	float: left;
+}
+
+footer nav li{
+	float: left;
+	list-style-type: none;
+	padding: 0 35px;
+}
+
+footer nav li.selected a{
+	color: #EB2D2D;
+}
+
+footer nav li a{
+	font-style: italic;
+	font-size: 19px;
+	color: white;
+	text-decoration: none;
+}
+
+footer .direitos{
+	float: right;
+}
+
+footer .direitos h2{
+	color: white;
+	font-size: 19px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* * * * */
+
+/* Sessão 5 - Página venda.html*/
+
+section.venda{
+	padding: 90px 2%;
+}
+
+section.venda .text-line{
+	max-width: 1400px;
+}
+
+section.venda h2{
+	font-size: 24px;
+	font-weight: normal;
+}
+
+section.venda .content-venda{
+	margin-top: 40px;
+}
+
+section.venda .sidebar{
+	float: left;
+	width: 30%;
+}
+
+section.venda .search1{
+	width: 90%;
+}
+
+section.venda .search1 .barra-preco{
+	margin-top: 8px;
+	background-color: white;
+	height: 20px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	position: relative;
+}
+
+section.venda .search1 .barra-preco-fill{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 20px;
+	border-radius: 20px;
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+section.venda .search1 .pointer-barra{
+	width: 26px;
+	height: 26px;
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+	border: 1px solid rgb(120, 120, 120);
+	border-radius: 13px;
+	position: absolute;
+	top: -3px;
+	left: -13px;
+}
+
+section.venda .search1 .preco-label{
+	margin-top: 8px;
+}
+
+.venda .search1 .preco-label p{
+	font-size: 14px;
+}
+
+.venda .search1 .preco-label p:first-of-type{
+	float: left;
+}
+
+.venda .search1 .preco-label p:last-of-type{
+	float: right;
+}
+
+section.venda .search2{
+	margin-top: 40px;
+}
+
+.search2 form .form-venda-wrapper{
+	margin-top: 10px;
+}
+
+.form-venda-wrapper input[type="checkbox"]{
+	display: none;
+}
+
+.search2 form .form-venda-wrapper label{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	border-radius: 3px;
+	cursor: pointer;
+	position: relative;
+}
+
+.form-venda-wrapper input[type="checkbox"]:checked + label .circle{
+	display: block;
+}
+
+form .form-venda-wrapper label .circle{
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background-color: black;
+	position: absolute;
+	display: none;
+	top: 5px;
+	left: 5px;
+}
+
+.search2 form .form-venda-wrapper span{
+	padding: 0 10px;
+}
+
+.vitrine-venda{
+	width: 70%;
+	float: right;
+}
+
+.vitrine-venda .vitrine-carros{
+	margin-top: 20px;
+}
+
+/* * * * */
+
+/* Sessão 6 - Página veículo-teste.html*/
+
+section.venda-single{
+	padding: 0 2%;
+}
+
+.venda-single .container{
+	padding: 40px 0;
+	max-width: 1280px;
+	text-align: center;
+}
+
+.venda-single .info-veiculos{
+	width: 60%;
+	display: inline-block;
+}
+
+.info-bread{
+	padding: 20px 0;
+	text-align: left;
+}
+
+.info-bread a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+
+.info-bread span{
+	padding: 0 30px;
+}
+
+.foto-destaque{
+	width: 100%;
+	padding-top: 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.nav-galeria-parent{
+	width: 100%;
+	padding: 36px;
+	position: relative;
+}
+
+.nav-arrow-left{
+	position: absolute;
+	top: 50%;
+	left: 8px;
+	width: 22px;
+	height: 22px;
+	background-image: url('../imagens/arrow-left.png');
+	background-size: 100% 100%;
+	transform: translateY(-50%);
+	cursor: pointer;	
+}
+
+.nav-arrow-right{
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	width: 22px;
+	height: 22px;
+	background-image: url('../imagens/arrow-right.png');
+	background-size: 100% 100%;
+	transform: translateY(-50%);	
+	cursor: pointer;
+}
+
+.nav-galeria{
+	width: 100%;
+	overflow: hidden;
+}
+
+.nav-galeria-wrapper{
+	/*width: 200%;*/
+}
+
+.mini-img{
+	/*width: calc(100% / 6);*/
+	/*padding-top: calc(60% / 6);*/
+	float: left;
+	border: 7px solid white;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.venda-descricao{
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+	text-align: left;
+}
+
+.venda-descricao h2{
+	margin-top: 40px;
+}
+
+.venda-descricao p{
+	font-size: 17px;
+	padding: 25px 0;
+	max-width: 200px;
+}
+
+/* * * * */
+
+/* Sessão 7 - Página sobre.html*/
+
+section.sobre .container{
+	max-width: 840px;
+	margin-top: 30px;
+	padding: 0 2%;
+}
+
+.sobre p{
+	line-height: 28px;
+}
+
+.img-destaque-sobre{
+	background-color: #ccc;
+	width: 100%;
+	padding-top: 60%;
+}
+
+.descricao-autor{
+	margin-top: 20px;
+}
+
+.descricao-autor p{
+	margin-top: 10px;
+}
+
+.descricao-autor2{
+	margin: 40px 0;
+}
+
+.img-menor-sobre{
+	background-color: #ccc;
+	width: 30%;
+	padding-top: 30%;
+	float: left;
+}
+
+.descricao-autor2 p{
+	float: left;
+	width: 70%;
+	padding: 15px;
+}
+
+/* * * * */
+
+/* media queries */
+
+@media screen and (max-width: 1400px){
+	section.banner{
+		background-size: 85% auto;
+		background-position: 100% 100%;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.servicos-descricao .half1{
+		text-align: center;
+	}
+
+	.servicos-descricao .btn1{
+		display: block;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+}
+
+@media screen and (max-width: 1024px){
+	section.banner{
+		background-size: cover;
+		background-position: center;
+		height: 70vw;
+		min-height: 500px;
+	}
+}
+
+@media screen and (max-width: 860px){
+	
+	section.servicos-descricao{
+		flex-direction: column;
+	}
+
+	.servicos-descricao .half1,
+	.servicos-descricao .half2{
+		width: 100%;
+		padding: 80px 4%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	header nav.menu-desktop{
+		display: none;
+	}
+
+	header nav.menu-mobile{
+		display: block;
+	}
+
+	section.contato form .w50{
+		width: 100%;
+	}
+
+	footer nav ul{
+		display: none;
+	}
+
+	footer .direitos{
+		float: none;
+		text-align: center;
+	}
+
+	section.venda .sidebar{
+		width: 100%;
+		text-align: center;
+	}
+
+	section.venda .sidebar .search1{
+		display: inline-block;
+	}
+
+	section.venda .sidebar .search2{
+		display: inline-block;
+		text-align: left;
+	}
+
+	.vitrine-venda{
+		text-align: center;
+		width: 100%;
+	}
+
+	.venda-single .info-bread{
+		text-align: center;
+	}
+
+	.venda-single .info-veiculos{
+		width: 100%;
+	}
+
+	.venda-descricao{
+		text-align: center;
+	}
+
+	.venda-descricao p{
+		max-width: none;
+	}
+}
+
+@media screen and (max-width: 580px){
+	section.banner .text-banner{
+		padding: 30px;
+	}
+
+	section.banner .text-banner-single{
+		font-size: 18px;
+		width: 240px;
+	}
+
+	section.banner .text-banner-single:nth-of-type(4){
+		font-size: 21px;
+		width: 270px;
+	}
+
+	section.veiculos-destaque .container{
+		text-align: center;
+	}
+
+	.vitrine-carros{
+		display: inline-block;
+		width: 80%;
+		float: none;
+	}
+
+	.vitrine-carros .carro-img{
+		margin-top: 10px;
+		background-image: url('../imagens/carro1.jpg');
+		background-size: 100% 100%;
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	.img-menor-sobre{
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	.descricao-autor2 p{
+		width: 100%;
+		padding: 20px 0;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.vitrine-carros{
+		width: 100%;
+	}
+
+	.info-bread span{
+		padding: 0 20px;
+	}
+
+}
+
+@media screen and (max-width: 375px){
+	.info-bread span{
+		padding: 0 10px;
+	}
+}
